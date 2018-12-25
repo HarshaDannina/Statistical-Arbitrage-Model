@@ -28,3 +28,5 @@ Therefore, you can quickly validate your predictions on new data. Here is the eq
  
  ![alt text](https://github.com/HarshaManoj/Statistical-Arbitrage-Model/blob/master/prediction.png "Prediction plot")
  
+Here is the detailed blog in Medium
+https://medium.com/@harshamanoj/statistical-arbitrage-model-256d1bc9b801
