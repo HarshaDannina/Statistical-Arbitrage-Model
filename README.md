@@ -9,7 +9,11 @@ there exists a correlation between prices of each of the stocks.
 There, though, exist anomalous times when for a small period of time, the correlation is broken. 
 But the market self corrects in some time and the correlation is re-established. 
 During this small window of time when correlation is anomalous, there exists a money-making opportunity for quantitative traders. 
-** First, you have many types of data The stock market is like candy-land for any data scientists who are even remotely interested in finance. 
+
+ ![alt text](https://cdn-images-1.medium.com/max/800/1*IPP7m_tu5VwSLAr2XIwaiA.jpeg "You Need an Algorithm, Not a Data Scientist
+")
+
+First, you have many types of data The stock market is like candy-land for any data scientists who are even remotely interested in finance. 
 Hat you can choose from. 
 You can find prices, fundamentals, global macroeconomic indicators, volatility indices, etc… the list goes on and on. 
 Second, the data can be very granular. 
