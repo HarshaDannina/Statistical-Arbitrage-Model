@@ -1,7 +1,7 @@
 # Statistical-Arbitrage-Model
 Machine learning model to predict stock data for a year
 
- ![alt text](https://github.com/HarshaManoj/Statistical-Arbitrage-Model/blob/master/Slide1.PNG "Statistical Arbitrage Model")
+ ![alt text](https://cdn-images-1.medium.com/max/800/1*w_gWr6Q1sACAMzxhLnDFvg.png "Statistical Arbitrage Model")
  
  
 **Statistical Arbitrage**: For a family of stocks, generally belonging to the same sector or industry, 
