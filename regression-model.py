@@ -25,7 +25,7 @@ scaler = MinMaxScaler(feature_range=(0, 1))
 from sklearn.feature_extraction import DictVectorizer
 from sklearn.model_selection import train_test_split
 
-from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import TheilSenRegressor, LinearRegression, RANSACRegressor
 
 
 from sklearn.metrics import recall_score, precision_score
@@ -70,7 +70,7 @@ test = pd.DataFrame(test, columns = stocks.columns)
 
 
 #Pre-Processing  Train Data 
-X_train = train[['HL_PCT', 'OPEN', 'TOTTRDQTY', 'TOTTRDVAL', 'TOTALTRADES']]
+X_train = train[['HIGH', 'LOW', 'OPEN', 'TOTTRDQTY', 'TOTTRDVAL', 'TOTALTRADES']]
 x_train = X_train.to_dict(orient='records')
 vec = DictVectorizer()
 X = vec.fit_transform(x_train).toarray()
@@ -78,15 +78,17 @@ Y = np.asarray(train.CLOSE)
 Y = Y.astype('int')
 
 #Pre-Processing Test data
-X_test = test[['HL_PCT', 'OPEN', 'TOTTRDQTY', 'TOTTRDVAL', 'TOTALTRADES']]
+X_test = test[['HIGH', 'LOW', 'OPEN', 'TOTTRDQTY', 'TOTTRDVAL', 'TOTALTRADES']]
 x_test = X_test.to_dict(orient='records')
 vec = DictVectorizer()
 x = vec.fit_transform(x_test).toarray()
 y = np.asarray(test.CLOSE)
 y = y.astype('int')
 
+
+
 #Classifier
-clf = LinearRegression()
+clf = TheilSenRegressor()
 clf.fit(X, Y) 
 print("Accuracy of this Statistical Arbitrage model is: ",clf.score(x,y))
 predict = clf.predict(x)
