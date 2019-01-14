@@ -29,7 +29,7 @@ Therefore, you can quickly validate your predictions on new data. Here is the eq
  
  I did time series analysis to seperate 2016 & 2017 reports as Training and Testing data respectively.
  
- Then did regression with **Linear Regression**.
+ Then did regression with **TheilSenRegressor**.
  
  The prediction graph over 2017 is plotted with an accuracy of 98.2%
  
