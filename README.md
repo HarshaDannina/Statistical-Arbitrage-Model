@@ -31,9 +31,9 @@ Therefore, you can quickly validate your predictions on new data. Here is the eq
  
  Then did regression with **Linear Regression**.
  
- The prediction graph over 2017 is plotted with an accuracy of 85.7%
+ The prediction graph over 2017 is plotted with an accuracy of 98.2%
  
- ![alt text](https://github.com/HarshaManoj/Statistical-Arbitrage-Model/blob/master/prediction.png "Prediction plot")
+ ![alt text](https://github.com/HarshaManoj/Statistical-Arbitrage-Model/blob/master/TheilSenRegressor-98.2.png "Prediction plot")
  
 Here is the detailed blog in Medium
 https://medium.com/@harshamanoj/statistical-arbitrage-model-256d1bc9b801
